@@ -1,0 +1,178 @@
+.services-page {
+  padding-top: 70px; /* Account for fixed navbar */
+}
+
+.services-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.services-hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-content {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+.additional-services {
+  background: white;
+  padding: 4rem 0;
+}
+
+.additional-services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.additional-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.additional-service {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.additional-service:hover {
+  transform: translateY(-3px);
+}
+
+.additional-service h4 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.additional-service p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 2rem 0;
+  }
+  
+  .services-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .services-content {
+    padding: 2rem 0;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .additional-services {
+    padding: 2rem 0;
+  }
+  
+  .additional-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card,
+  .additional-service {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .services-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+  }
+} 
